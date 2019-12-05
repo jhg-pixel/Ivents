@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vhod"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="409dp"
+        android:layout_height="169dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067"
+        app:srcCompat="@drawable/pikchvhod" />
+
+    <Button
+        android:id="@+id/voiti"
+        android:layout_width="251dp"
+        android:layout_height="128dp"
+        android:layout_marginBottom="224dp"
+        android:background="@drawable/knopvhod2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="382dp"
+        android:layout_height="94dp"
+        android:background="@drawable/strokavod"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Введите e-mail"
+        android:textAlignment="center"
+        android:textColor="#2A070404"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29" />
+
+    <EditText
+        android:id="@+id/poroli"
+        android:layout_width="414dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/strokavod"
+        android:ems="10"
+        android:freezesText="false"
+        android:inputType="textPersonName"
+        android:text="Введите пароль"
+        android:textAlignment="center"
+        android:textColor="#2A070404"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/voiti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/reg"
+        android:layout_width="181dp"
+        android:layout_height="81dp"
+        android:background="@drawable/knopka_resurs1"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voiti" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
